@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Filmy</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Moje Filmy</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Domů</a></li>
+                <li><a href="#films">Filmy</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Vítejte na mé filmové stránce</h2>
+        <p>Zde najdete všechny moje filmy.</p>
+    </section>
+
+    <section id="films">
+        <h2>Moje Filmy</h2>
+        <div class="film-container">
+            
+            <div class="film">
+                <h3>Film 1</h3>
+                <div class="warning-container">
+                    <video controls>
+                        <source src="film1.mp4" type="video/mp4">
+                        Váš prohlížeč nepodporuje přehrávání videa.
+                    </video>
+                    <span class="warning-icon" title="Tento film obsahuje silné scény!">!</span>
+                </div>
+                <button class="toggle-info">Více informací</button>
+                <div class="film-info">
+                    <p>Popis filmu 1: Krátký text o filmu.</p>
+                    <p>Režisér: Lexa</p>
+                    <p>Rok vydání: 2024</p>
+                </div>
+            </div>
+
+            <div class="film">
+                <h3>Film 2</h3>
+                <div class="warning-container">
+                    <video controls>
+                        <source src="film2.mp4" type="video/mp4">
+                        Váš prohlížeč nepodporuje přehrávání videa.
+                    </video>
+                    <span class="warning-icon" title="Film obsahuje blikající světla!">!</span>
+                </div>
+                <button class="toggle-info">Více informací</button>
+                <div class="film-info">
+                    <p>Popis filmu 2: Krátký text o filmu.</p>
+                    <p>Režisér: Lexa</p>
+                    <p>Rok vydání: 2025</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Napište mi na <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    </section>
+
+</body>
+</html>
